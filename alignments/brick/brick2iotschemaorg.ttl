@@ -1,0 +1,453 @@
+@prefix bf: <https://brickschema.org/schema/1.0.3/BrickFrame#> .
+@prefix brick: <https://brickschema.org/schema/1.0.3/Brick#> .
+@prefix iot: <https://iotschema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+brick:Acceleration_Time a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Air_Flow a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Air_Flow_Loss_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Air_Grains a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Capability .
+
+brick:Alarm_Delay a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Angle a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Average_Cooling_Demand a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Booster a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:CO2 a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:CO2_High_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Capacity a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Change_Filter_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Command a rdfs:Class ;
+    rdfs:subClassOf iot:Capability .
+
+brick:Communication_Loss_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Compressor_Overload_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Condensate_Leak_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Conductivity a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Cooling a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Current a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Current_Limit a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:DI_Water_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Damper a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Damper_Position a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Dead_Band a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Deceleration_Time a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Deionised_Water_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Demand a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Dewpoint a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Direction a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:Direction_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Disable a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Disable_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Discharge_Air_Flow a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Drive_Ready_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Emergency_Air_Flow a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Emergency_Air_Flow_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Emergency_Generator_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Emergency_Generator_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Emergency_Power_Off a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Emergency_Power_Off_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Emergency_Push_Button_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Enable a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Enable_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Energy a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Enthalpy a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Even_Month_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Failure_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Fan a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Fan_Overload_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Fan_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Fans_Stage a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Fault_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Filter_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Fire_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Fire_Control_Panel a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Fire_Control_Panel_LED_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Flow a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Freeze_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Frequency a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:Frost a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Fume_Hood_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Hail a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Hand_Auto_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Heating a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:High_Head_Pressure_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:High_Humidity_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:High_Temperature_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Hold_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Humidifier_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Humidify a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Humidity a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Increase_Decrease_Step a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Integral_Gain a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Integral_Time a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Liquid_Detected_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Load a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Load_Shed a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Load_Shed_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Low_Humidity_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Low_Suction_Pressure_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Low_Temperature_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Luminance a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:Luminance_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Maintenance_Required_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Manual_Auto_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Min_Fresh_Air a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Mode a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:Mode_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Motion a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Occupancy a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:On_Off a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:On_Off_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Overridden_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Override a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Panel_Lockout a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Piezoelectric a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Power a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Power_Loss_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Pressure a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Pressure_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Proportional_Band a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Proportional_Gain a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Pump a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Pump_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Pump_Lead_Lag_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Pump_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Rain a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Rated_Speed a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Request a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Reset a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:Run_Time a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Running_Hour a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Sensor a rdfs:Class ;
+    rdfs:subClassOf iot:Capability .
+
+brick:Setpoint a rdfs:Class ;
+    rdfs:subClassOf iot:Capability .
+
+brick:Short_Cycle_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Shutdown a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Smoke_Detected_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Solar_Radiance a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Speed a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Stages_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Start_Stop a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Start_Stop_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Status a rdfs:Class ;
+    rdfs:subClassOf iot:Capability .
+
+brick:Supply_Air_Flow a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:System_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Temperature a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Temperature_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Thermostat_Adjust a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Timer a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Tolerance a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Torque a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Trace_Heat a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Turn_Off_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Unit_Failed_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:Usage a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:VFD_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+
+brick:VFD_Speed a rdfs:Class ;
+    rdfs:subClassOf iot:Action,
+        iot:Property .
+
+brick:VFD_Speed_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:VFD_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Valve a rdfs:Class ;
+    rdfs:subClassOf iot:Action .
+
+brick:Valve_Status a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Voltage a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Warm_Cool_Adjust a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Water_Level a rdfs:Class ;
+    rdfs:subClassOf iot:Property .
+
+brick:Water_Loss_Alarm a rdfs:Class ;
+    rdfs:subClassOf iot:Event .
+

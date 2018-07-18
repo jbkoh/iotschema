@@ -1,0 +1,1067 @@
+{
+  "@context": {
+    "brick": "https://brickschema.org/schema/1.0.3/Brick#",
+    "iot": "https://iotschema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "brick:Emergency_Push_Button_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Temperature_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Panel_Lockout",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Energy",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Flow",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Thermostat_Adjust",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Voltage",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Speed",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Disable",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Increase_Decrease_Step",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Hold_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Conductivity",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Communication_Loss_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Air_Flow_Loss_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Cooling",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Capability"
+      }
+    },
+    {
+      "@id": "brick:Water_Loss_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Running_Hour",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Even_Month_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Air_Flow",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Power_Off_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Pump_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Pump_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Temperature",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Shutdown",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:CO2_High_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:VFD_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Power",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Run_Time",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Dewpoint",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Luminance",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Action"
+        },
+        {
+          "@id": "iot:Property"
+        }
+      ]
+    },
+    {
+      "@id": "brick:Average_Cooling_Demand",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Hand_Auto_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Pressure",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Proportional_Band",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Manual_Auto_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Air_Flow",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Capacity",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Deionised_Water_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Fans_Stage",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Alarm_Delay",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Smoke_Detected_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Mode_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Low_Temperature_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Change_Filter_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Pressure_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Solar_Radiance",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Load_Shed",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Frequency",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Property"
+        },
+        {
+          "@id": "iot:Action"
+        }
+      ]
+    },
+    {
+      "@id": "brick:Hail",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Failure_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Filter_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Fan_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Start_Stop",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Start_Stop_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Tolerance",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Power_Loss_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Angle",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Valve",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:High_Temperature_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Load",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Capability"
+      }
+    },
+    {
+      "@id": "brick:Occupancy",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Action"
+        },
+        {
+          "@id": "iot:Property"
+        }
+      ]
+    },
+    {
+      "@id": "brick:VFD_Speed",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Property"
+        },
+        {
+          "@id": "iot:Action"
+        }
+      ]
+    },
+    {
+      "@id": "brick:Unit_Failed_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Direction_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Fire_Control_Panel",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Air_Grains",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Water_Level",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Discharge_Air_Flow",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Generator_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Setpoint",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Capability"
+      }
+    },
+    {
+      "@id": "brick:Fan_Overload_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:On_Off",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Rated_Speed",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Condensate_Leak_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Current_Limit",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Fault_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Damper_Position",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Air_Flow_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Min_Fresh_Air",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:VFD_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Luminance_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Fume_Hood_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Power_Off",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Enthalpy",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Low_Suction_Pressure_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Enable_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:On_Off_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Overridden_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Heating",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Fire_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Short_Cycle_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Low_Humidity_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Valve_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Liquid_Detected_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Disable_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Stages_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Command",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Capability"
+      }
+    },
+    {
+      "@id": "brick:Fire_Control_Panel_LED_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Direction",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Property"
+        },
+        {
+          "@id": "iot:Action"
+        }
+      ]
+    },
+    {
+      "@id": "brick:Piezoelectric",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Integral_Time",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Humidifier_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Booster",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Current",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:High_Head_Pressure_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Deceleration_Time",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Torque",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Override",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Drive_Ready_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Load_Shed_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Fan",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Freeze_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Emergency_Generator_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:VFD_Speed_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Rain",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Demand",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Pump",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Compressor_Overload_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Acceleration_Time",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Pump_Lead_Lag_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:CO2",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Sensor",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Capability"
+      }
+    },
+    {
+      "@id": "brick:Turn_Off_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Usage",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Request",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Motion",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Warm_Cool_Adjust",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:High_Humidity_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Timer",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Proportional_Gain",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Humidify",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Maintenance_Required_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Frost",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Enable",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Integral_Gain",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Dead_Band",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:DI_Water_Alarm",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Event"
+      }
+    },
+    {
+      "@id": "brick:Damper",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Trace_Heat",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:System_Status",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Humidity",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Property"
+      }
+    },
+    {
+      "@id": "brick:Supply_Air_Flow",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": {
+        "@id": "iot:Action"
+      }
+    },
+    {
+      "@id": "brick:Mode",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Property"
+        },
+        {
+          "@id": "iot:Action"
+        }
+      ]
+    },
+    {
+      "@id": "brick:Reset",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "iot:Property"
+        },
+        {
+          "@id": "iot:Action"
+        }
+      ]
+    }
+  ]
+}
